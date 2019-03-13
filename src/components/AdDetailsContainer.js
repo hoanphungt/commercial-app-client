@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import { loadAd } from '../actions/ads'
+import './Ad.css'
 
 class AdDetailsContainer extends React.Component {
     componentDidMount() {
@@ -13,8 +14,7 @@ class AdDetailsContainer extends React.Component {
         const ad = this.props.ad
         return (
         <div>
-            <h1>Details of the Item</h1>
-            <h2>Name: {ad.title}</h2>
+            <h1>{ad.title}</h1>
             <i>Price: Euro {ad.price}</i><br></br>
             <img src={ad.picture} alt='item' />
             <p>Description: {ad.description}</p>
