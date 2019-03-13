@@ -9,14 +9,15 @@ export const AdsList = (props) => {
     return (
         <div>
             <h1>List of all items</h1>
-            <ul>
+            <ol>
                 {props.ads.map(ad => (
                     <li key={ad.id}>
                         <h3><Link to={`/ads/${ad.id}`}>{ad.title}</Link></h3>
-                        <p>{ad.price}</p>
+                        <p>{ad.price}</p><br></br>
+                        <img src={ad.picture} alt='item' />
                     </li>
                 ))}
-            </ul>
+            </ol>
         </div>
     )
 } 
