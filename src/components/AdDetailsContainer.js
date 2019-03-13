@@ -8,8 +8,6 @@ class AdDetailsContainer extends React.Component {
     }
 
     render() {
-        console.log(this.props)
-
         if (this.props.ad === null) return <h1>Loading ...</h1>
 
         const ad = this.props.ad

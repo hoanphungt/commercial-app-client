@@ -8,7 +8,7 @@ export const AdsList = (props) => {
 
     return (
         <div>
-            <h1>List of all items</h1>
+            <h1>Items on sale - check it now!</h1>
             <ol>
                 {props.ads.map(ad => (
                     <li key={ad.id}>
